@@ -1,5 +1,32 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    #page-wrap
+      #header
+        //
+           begin header 
+        .wrapper
+          #logo
+            span.hidden
+              a(href='/') Circles of Sustainability
+          #menu
+            #nav
+              #controlLinks
+      //
+         end header 
+      #body
+        //
+           Side Menu 
+        #side-menu
+        .wrapper.homepage-wrapper
+          h1 SEMANTIC CITIES
+          #rightcol
+            table
+              thead
+                tr
+                  th Name
+                  th Value
+              tbody#city-contents
+          #centercol
+            #map-container
+              #map-canvas
